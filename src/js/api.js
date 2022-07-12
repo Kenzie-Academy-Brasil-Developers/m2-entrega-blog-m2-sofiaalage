@@ -39,7 +39,7 @@ class Api {
             })
             .then(function (res) {
                 if (res.ok) {
-                    document.location.href = "posts.html"
+                    document.location.href = "index.html"
                 }
                 return res.json();
             })
