@@ -1,6 +1,7 @@
 class Api {
     static token = ""
     static uid = ""
+    static userInfo = ""
 
     async registerUser(user) {
         const response = await fetch("https://blog-m2.herokuapp.com/users/register",
@@ -27,6 +28,30 @@ class Api {
         return response
     }
 
+    static async getUser(id) {
+        const response = await fetch("https://blog-m2.herokuapp.com/users/"+id,
+            {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${Api.token}`
+                }
+            })
+            .then(function (res) {
+                return res.json();
+            })
+            .then(function (data) {
+                return data
+            })
+            .catch((error) => {
+                console.log(JSON.stringify(error))
+            });
+
+            Api.userInfo = JSON.stringify(response)
+            localStorage.setItem("userInfo", Api.userInfo);
+        
+        return response
+    }
 
     static async loginUser(user) {
         const response = await fetch("https://blog-m2.herokuapp.com/users/login",

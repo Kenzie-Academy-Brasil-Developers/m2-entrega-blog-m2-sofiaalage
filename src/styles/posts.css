@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;700;900&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;700;900&family=Poppins&display=swap');
 nav{
     background-color:#6495ED;
     display: flex;
     justify-content: space-around;
+    height: 30px;
 }
 .usuario{
     font-family: 'Montserrat';
@@ -13,17 +15,25 @@ nav{
     color: #FAFAFA;
 }
 .logout{
-    background-color: #EDBC64;
-    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EDBC64;
+    border-radius: 4px;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #FAFAFA;
+    font-size: 11px;
+    line-height: 28px;
+    color: #F8E7E7;
+    border: none;
+    width: 50px;
+    height: 20px;
 }
 main{
-    background-color:  #F9F9F9;
+    background-color: #F9F9F9;
     display: flex;
+    justify-content: center;
 
 }
 .container{
@@ -67,6 +77,27 @@ main{
     height: 20px;
 }
 
+
+.divImg{
+    display: flex;
+    width: 50px;
+}
+.divMainPost{
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.divDateAndButtons{
+    display: flex;
+    width: 50px;
+    line-height:20px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+
+}
 .textoButtom{
 
 } 
@@ -77,14 +108,16 @@ h4{
     font-size: 15px;
     line-height: 20px;
     color: #000000;
+    margin: 0px;
 }
 h5{
-    font-family: 'Montserrat';
+    font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 20px;
-    color: #000000;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 14px;
+    color: #989898;
+    margin: 0px;
 }
 p{
     font-family: 'Roboto';
@@ -93,13 +126,14 @@ p{
     font-size: 14px;
     line-height: 19px;
     color: #5F5C5C;
+    margin: 0px;
 
 }
 .editButton{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 7px;
     line-height: 15px;
     color: #6495ED;
 
@@ -108,18 +142,56 @@ p{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 7px;
     line-height: 15px;
     color: #ED6464;
 }
 .post{
+    display: flex;
     width: 300px;
     height: 97px;
     background: #FFFFFF;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    margin: 10px;
 }
 
 .nextButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EDBC64;
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 28px;
+    color: #F8E7E7;
+    border: none;
+    width: 50px;
+    height: 20px;
+}
+
+.usuario_img{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+}
+@media (min-width:780px) {
+    .container {
+        width: 430px;
+    }
+    #textareaPost{
+    
+            width: 496px
+    }
+    .post{
+        width: 409px;
+    }
+    .divMainPost{
+        width: 312px;
+    }
 
 }
