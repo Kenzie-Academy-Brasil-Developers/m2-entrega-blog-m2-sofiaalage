@@ -71,6 +71,7 @@ function addPost(post) {
 
     let divDateAndButtons = document.createElement("div")
     divDateAndButtons.classList.add("divDateAndButtons")
+    divDateAndButtons.id = "divButtons" + post.id
     divPost.appendChild(divDateAndButtons)
 
     let user = document.createElement("h4")
@@ -136,10 +137,8 @@ function checkIsLogged(){
 }
 
 function editPost(divId) {
-
-    console.log(divId)
-    let postId = divId.split("post")[1]
-    let div = document.querySelector("#" + divId)
+    let postId = divId.split("divButtons")[1]
+    let div = document.querySelector("#post" + postId)
 
     text = div.getElementsByTagName('p')[0].innerHTML
 
