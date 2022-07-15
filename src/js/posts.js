@@ -46,17 +46,28 @@ function addPost(post) {
     divPost.classList.add("card")
     divPost.id = "post"+post.id
     divPosts.appendChild(divPost)
+    
+    
+    let user = document.createElement("h4")
+    user.innerHTML =  post.user.username
+    divPost.appendChild(user)
 
-    let h5 = document.createElement("h5")
-    let data = new Date(post.createdAt)
-    h5.innerHTML = "Criado em " + data.toLocaleDateString("pt-br") + " por " + post.user.username
-    divPost.appendChild(h5)
 
     let p = document.createElement("p")
     p.innerHTML = post.content
     divPost.appendChild(p)
-
+    
     addEditAndRemoveButton(divPost, post.user.id)
+    
+    let h5 = document.createElement("h5")
+    let data = new Date(post.createdAt)
+    h5.innerHTML = data.toLocaleDateString("pt-br") 
+    divPost.appendChild(h5)
+
+   
+
+
+
 }
 
 function addNextButton(nextPage) {
@@ -75,14 +86,14 @@ function addNextButton(nextPage) {
 function addEditAndRemoveButton(pai, postUid) {
     if (postUid == Api.uid) {
         console.log(pai.id)
-        editButton = document.createElement("button")
+        editButton = document.createElement("p")
         editButton.classList.add("editButton")
         editButton.id = pai.id
         editButton.setAttribute("onclick", "editPost('"+editButton.id+"')")
         editButton.textContent = "Edit post"
         pai.appendChild(editButton)
 
-        removeButton = document.createElement("button")
+        removeButton = document.createElement("p")
         removeButton.classList.add("removeButton")
         removeButton.setAttribute("onclick", "deletePost('"+editButton.id+"')")
         removeButton.textContent = "Remove post"

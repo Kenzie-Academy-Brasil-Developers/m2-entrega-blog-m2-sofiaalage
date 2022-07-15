@@ -13,7 +13,7 @@ class Api {
             })
             .then(function (res) {
                 if (res.ok) {
-                    document.location.href = "login.html"
+                    document.location.href = "index.html"
                 }
                 return res.json();
             })
@@ -39,7 +39,7 @@ class Api {
             })
             .then(function (res) {
                 if (res.ok) {
-                    document.location.href = "index.html"
+                    document.location.href = "posts.html"
                 }
                 return res.json();
             })

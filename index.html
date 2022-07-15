@@ -5,23 +5,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>m2-entrega-blog-m2</title>
-  <link rel="stylesheet" href="src/styles/post.css">
+  <link rel="stylesheet" href="src/styles/form.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;700;900&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="container">
-      <div>
-        <textarea  placeholder="Comece seu post incrível" name="textareaPost" id="textareaPost"></textarea>
-        <button class="sendPost" id="sendPost" onClick="createPost()">Enviar post</button>
-      </div>
-      <div class="posts">
+      <form>
+      
+          <h1>Login</h1>
+        
+          <div class="card">
+            <input class="box" type="email" placeholder="Email" name="email" id="email" required>
 
-      </div>
-    </div>
-
+          <input class="box" type="password" placeholder="Senha" name="password" id="password" required>
+          </div>
+          
+          <div id="error"></div>
+          
+          <button type="submit" class="loginbtn">Login</button>
+      
+      
+      </form>
+  </div>
   <script src="src/js/api.js"></script>
 
   <script src="src/js/usuario.js"></script>
-  <script src="src/js/posts.js"></script>
+  <script src="src/js/login.js"></script>
 </body>
 </html>

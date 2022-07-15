@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;700;900&family=Poppins&display=swap');
+nav{
+    background-color:#6495ED;
+    display: flex;
+    justify-content: space-around;
+}
+.usuario{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FAFAFA;
+}
+.logout{
+    background-color: #EDBC64;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FAFAFA;
+}
+main{
+    background-color:  #F9F9F9;
+    display: flex;
+
+}
+.container{
+    width: 301px;
+    height: 97px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.firstPost{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    width: 300px;
+}
+#textareaPost{
+    border: none;
+    width: 297px;
+    height: 89px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    color: #989898;
+}
+.sendPost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #EDBC64;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #F8E7E7;
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+
+.textoButtom{
+
+} 
+h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+}
+h5{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+}
+p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #5F5C5C;
+
+}
+.editButton{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6495ED;
+
+}
+.removeButton{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #ED6464;
+}
+.post{
+    width: 300px;
+    height: 97px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.nextButton{
+
+}
