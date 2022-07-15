@@ -3,7 +3,7 @@ class Api {
     static uid = ""
     static userInfo = ""
 
-    async registerUser(user) {
+    static async registerUser(user) {
         const response = await fetch("https://blog-m2.herokuapp.com/users/register",
             {
                 method: "POST",

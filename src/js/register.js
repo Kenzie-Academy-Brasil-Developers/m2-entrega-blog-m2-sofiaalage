@@ -11,6 +11,7 @@ async function handleSubmit(e) {
 
 
     user = new Usuario(userName, email, avatarUrl, password)
-    return await Api.registerUser(user);
+    await Api.registerUser(user);
+    document.location.href = "index.html"
 
 }
